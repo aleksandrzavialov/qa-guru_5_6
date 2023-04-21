@@ -71,6 +71,7 @@ def test_find_suitable_user():
 def hello_decorator(func, *args):
     separated_tuple = ', '.join(args)
     result = string.capwords(f'{func.__name__.replace("_"," ")}')+f' [{separated_tuple}]'
+    print(result, end='\n')
     return result
 
 
